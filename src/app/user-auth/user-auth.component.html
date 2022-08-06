@@ -1,0 +1,16 @@
+<div class="row justify-content-center py-3 m-0">
+    <div class="col-md-3">
+        <h1 class="m-0 pt-3 pb-2">Login</h1>
+        <form [formGroup]="profileForm">
+            <mat-form-field class="d-block" appearance="legacy">
+                <mat-label>Username</mat-label>
+                <input matInput autocomplete="off" placeholder="Username" formControlName="firstName">
+            </mat-form-field>
+            <mat-form-field class="d-block" appearance="legacy">
+                <mat-label>LastName</mat-label>
+                <input type="password" matInput autocomplete="off" placeholder="Password" formControlName="password">
+            </mat-form-field>
+            <button mat-raised-button (click)="onLogin()" class="w-auto mx-auto">Login</button>
+        </form>
+    </div>
+</div>
